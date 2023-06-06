@@ -19,6 +19,9 @@ class UI {
         this.renderTable();
         this.taskInput.value = '';
     }
+    addTaskS() {
+        this.addTask(this.taskInput);
+    }
 
     renderTable() {
         this.tableBody.innerHTML = '';
