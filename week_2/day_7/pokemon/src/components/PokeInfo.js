@@ -125,4 +125,8 @@ export default function PokeInfo(props) {
     else if (type=== 'ice') return 'turquoise';
     else if (type=== 'steel') return 'cadetblue';
   }
+
+  
+
+
 }
