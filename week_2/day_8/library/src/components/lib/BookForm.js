@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Book } from '../models/book';
+import { Book } from '../../models/book';
 
 export default function BookForm(props) {
   const [title, setTitle] = useState('');
@@ -37,15 +37,10 @@ export default function BookForm(props) {
     setIsbn('');
   }
 
-  function putBookInForm(book) {
-    setTitle('a');
-    setAuthor('b');
-    setIsbn('c');
-  }
 
   return (
-    <div>
-      <h1>Library</h1>
+    <div className="mx-5">
+      <h3>MyLibrary</h3>
 
       <form id="form" onSubmit={onBookFormSubmit}>
         <div className="mb-3">

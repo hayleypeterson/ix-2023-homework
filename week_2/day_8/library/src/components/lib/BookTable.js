@@ -12,7 +12,7 @@ export default function BookTable(props) {
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody id="table-body">
+        <tbody className = "bg-light" id="table-body">
           {props.books.map((book) => {
             return (
               <tr key={book.isbn}>
@@ -21,13 +21,13 @@ export default function BookTable(props) {
                 <td>{book.isbn}</td>
                 <td>
                   <button
-                    className="btn btn-danger bn-sm me-1"
+                    className="btn btn-outline-danger btn-sm m-1"
                     onClick={() => props.onBookRemove(book)}
                   >
                     Delete
                   </button>
                   <button
-                    className="btn btn-warning bn-sm ms-1"
+                    className="btn btn-outline-warning btn-sm m-1"
                     onClick={() => props.onBookEdit(book)}
                   >
                     Edit
